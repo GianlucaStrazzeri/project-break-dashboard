@@ -1,1 +1,1 @@
-console.log("Hola Mundo");
+console.log("Javascript  de index conectado");
