@@ -1,27 +1,24 @@
 //Capturo el Id fecha del documento html y lo guardo como variable "fecha"
 let fecha= document.getElementById("fecha");
 
-//Creo una constante newDate que sea igual al metodo ofrecido por Js new Date();
-let today=new Date();
+//el metodo new Date(permite pedir la hora fecha etc)
+//el metodo getHours(permite pedir la hora)
+//el metodo getMinutes(permite pedir los minutos)
+//el metodo getSeconds(permite pedir los segundos)
+//se utiliza setInterval para repetir la función cada 1000 ms
+//se utiliza fecha.innerHTML para insertar como texto la hora , los minutos y los segundos
+//Utilizo de comillas francesas y dollar${} para intercalar variables con html
 
 
-//Utilizo el metodo toString para devolver la var today en un string 
-let todayString=today.toString();
-console.log(todayString);//Sun Dec 10 2023 14:57:21 GMT+0100 (hora estándar de Europa central)
-
-//Utilizo spread operator para transformar la variable todayString en Array; 
-let todayArray=[...todayString];
-console.log(todayArray);  // (67) [Elementos]
 
 
-//Utilizo el metodo .slice() para copiar una parte dell array sin modificar el original
-let time=todayArray.slice(16,24);
-console.log(time);
-
-//Utilizando el metodo .unshift() describo lo que estoy escribiendo en la consola.
-time.unshift("Horario Actual:");
-
-//Imprimo la fecha en el espacio de fecha de html/me devuelve un string que tendré que convertir a array 
-//para poder utilizar metodos con el
-fecha.innerHTML= `${time}`;
-
+const repetir = () => {
+    const today = new Date();
+    const horas = today.getHours();
+    const minutos = today.getMinutes();
+    const segundos = today.getSeconds();
+     
+    fecha.innerHTML= `${horas}, ${minutos}, ${segundos}`;
+};
+ 
+setInterval(repetir, 1000);

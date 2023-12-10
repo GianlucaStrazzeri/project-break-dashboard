@@ -44,3 +44,27 @@ for (i=0;i<arrEjemplo.length;i++){
 
 //7 Intento recorrer la variable como si fuera un array 
 console.log(today[7]);//undefined
+
+
+//Utilizo el metodo toString para devolver la var today en un string 
+let todayString=today.toString();
+console.log(todayString);//Sun Dec 10 2023 14:57:21 GMT+0100 (hora estándar de Europa central)
+
+//Utilizo spread operator para transformar la variable todayString en Array; 
+let todayArray=[...todayString];
+console.log(todayArray);  // 67 Elementos
+
+
+//Utilizo el metodo .slice() para copiar una parte dell array sin modificar el original
+let time=todayArray.slice(16 , 24);
+console.log(time);
+
+//Utilizando el metodo .unshift() describo lo que estoy escribiendo en la consola.
+time.unshift("Horario Actual:"); // 8 elementos
+
+//Imprimo la fecha en el espacio de fecha de html/me devuelve un string que tendré que convertir a array 
+//para poder utilizar metodos con el
+fecha.innerHTML= `${time}`;
+
+//imprimo el ultimo segundo en la consola para intentar modificarlo 
+let segundo =(time[8]);
