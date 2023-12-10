@@ -51,11 +51,13 @@ const repetir = () => {
         } ;
     
     
-
+    fecha.innerHTML=`Fecha: ${numeroDia}  ${mesDelAño}  ${año}`;
     reloj.innerHTML= `Hora: ${horas} : ${minutos} : ${segundos}`;
-    fecha.innerHTML=`Fecha: ${numeroDia}  ${mesDelAño}  ${año}`
-
    
+   
+   
+
+
 };
  
 setInterval(repetir, 1000);
@@ -80,5 +82,29 @@ setInterval(repetir, 1000);
 //Utilizo de comillas francesas y dollar${} para intercalar variables con html
 
 
-//Crear un evento de click que al darle te cree una clase css y un  elemento p con la logica dependiente
-//del horario
+
+
+//Crear un evento de click  utilizando idcapturadoadd.eventlistener("click",function"){}que  
+//te cree una clase css para agregar estilos y un  elemento p con la logica dependiente del horario
+//Logica del horario
+
+//if(horas>0 &&  horas< 7 && minutos <  0) {
+//    console.log("Es hora de descansar. Apaga y sigue mañana")}
+//else if (horas>7 &&  horas< 12 && minutos <  0) {
+//    console.log("Buenos días, desayuna fuerte y a darle al código")
+//}  
+//else if (horas>12 &&  horas< 14 && minutos <  0) {
+//    console.log("Echa un rato más pero no olvides comer")
+//}    
+//else if (horas>14 &&  horas< 16 && minutos <  0) {
+//    console.log("Espero que hayas comido")
+//}  
+//else if (horas>16 &&  horas< 18 && minutos <  0) {
+//    console.log("Buenas tardes, el último empujón")
+//} 
+//else if (horas>18 &&  horas< 22 && minutos <  0) {
+//    console.log("Esto ya son horas extras, ... piensa en parar pronto")
+//}  
+//else if (horas>22 &&  horas< 0 && minutos <  0) {
+//    console.log("Buenas noches, es hora de pensar en parar y descansar")
+//};
