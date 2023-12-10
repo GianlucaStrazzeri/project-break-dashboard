@@ -47,8 +47,8 @@ table {
 
 .flex{
     display:flex;
-    justify-content: space-around;
-    align-items: space-around;
     flex-wrap: wrap;
+    gap:10px;
+    background-color:rgb(209, 188, 188);
 }
 
