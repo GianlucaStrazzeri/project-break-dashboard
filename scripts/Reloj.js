@@ -8,7 +8,7 @@ const repetir = () => {
     const horas = today.getHours();
     const minutos = today.getMinutes();
     const segundos = today.getSeconds();
-    const numeroDia= today.getDate(); //10
+    const numeroDia= today.getDate(); //11
     let mesDelAño= today.getMonth(); //Me saca 11
     const año= today.getFullYear(); //2023
    
@@ -53,26 +53,26 @@ const repetir = () => {
     //Logica Frases
     if(horas>0 &&  horas< 7 ) {
         frase.innerHTML="Es hora de descansar. Apaga y sigue mañana"}
-    else if (horas>7 &&  horas< 12 ) {
+    else if (horas>=7 &&  horas<= 12 ) {
         frase.innerHTML="Buenos días, desayuna fuerte y a darle al código"
     }  
-    else if (horas>12 &&  horas< 14 ) {
+    else if (horas>=12 &&  horas<= 14 ) {
         frase.innerHTML="Echa un rato más pero no olvides comer"
     }    
-    else if (horas>14 &&  horas< 16 ) {
+    else if (horas>=14 &&  horas<= 16 ) {
         frase.innerHTML="Espero que hayas comido"
     }  
-    else if (horas>16 &&  horas< 18 ) {
+    else if (horas>=16 &&  horas<= 18 ) {
         frase.innerHTML="Buenas tardes, el último empujón"
     } 
-    else if (horas>18 &&  horas< 22 ) {
+    else if (horas>=18 &&  horas<= 22 ) {
         frase.innerHTML="Esto ya son horas extras, ... piensa en parar pronto"
     }  
-    else if (horas>22 &&  horas< 0 ) {
+    else if (horas>=22 &&  horas<= 0 ) {
         frase.innerHTML="Buenas noches, es hora de pensar en parar y descansar"
     };
 
-
+    
     
     
 
