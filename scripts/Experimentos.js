@@ -1,7 +1,8 @@
-//Reloj.js
+//1.                                        Reloj.js
+
 //Capturo el Id fecha del documento html y lo guardo como variable "fecha"
 //Capturo el Id reloj del documento html y lo guardo como variable "reloj"
-//el metodo new Date(permite pedir la hora fecha etc)
+//el metodo new Date(permite pedir la hora fecha)
 //el metodo getHours(permite pedir la hora)
 //el metodo getMinutes(permite pedir los minutos)
 //el metodo getSeconds(permite pedir los segundos)
@@ -23,8 +24,11 @@
 
 
 
-//Passwoord.js
+//                                      2.Passwoord.js
+
 //Crear un input
 //Crear un botón
-//Creado variables de simbolos, numeros, minusculas y mayusculas
-//Creado un espacio en html en el que tendrá que aparecer el resultado tiene un id=contraseña
+//Creado variable array de simbolos, numeros, minusculas y mayusculas
+//Creado un espacio en html en el que tendrá que aparecer el resultado tiene un id=insertarContraseña
+//Capturar el botón con id="button"
+//Crear un addEventListener click del botón insertar texto

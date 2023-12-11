@@ -1,8 +1,8 @@
-let mayúsculas =["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-console.log(mayúsculas);
-let  minúsculas =[ "abcdefghijklmnopqrstuvwxyz"];
-console.log(minúsculas);
-let  números= [ "0123456789"];
-console.log(números);
-let  símbolos=[ "!@#$%^&*()-_=+"];
-console.log(símbolos);
+let array =["ABCDEFGHIJKLMNOPQRSTUVWXYZ","abcdefghijklmnopqrstuvwxyz","0123456789","!@#$%^&*()-_=+"];
+console.log(`Se ha creado una variable con valor de un array: ${array} `);
+
+let button=document.getElementById("button");
+let insertarContraseña=document.getElementById("insertarContraseña");
+
+
+button.addEventListener("click",()=>(insertarContraseña.innerHTML="Insertar texto"));
