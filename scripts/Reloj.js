@@ -90,7 +90,7 @@ const repetir = () => {
     
 
     fecha.innerHTML=`Fecha: ${numeroDia}  ${mesDelAño}  ${año}`;
-    reloj.innerHTML= `Hora: ${horas} : ${minutos} : ${segundos}`;
+    reloj.innerHTML= `&#128368; Hora: ${horas} : ${minutos} : ${segundos}`;
    
    
 

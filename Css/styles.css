@@ -60,3 +60,15 @@ a{
 	background-color:aqua;
 }
 
+.passwoord{
+	/*1. Caracteristicas flex */
+	display:flex;
+	gap:20px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
+	max-width:500px;
+	/*3. Caracteristicas de fuentes y background */
+	background-color:yellowgreen;
+}
