@@ -243,27 +243,81 @@ transformNumeroInMes(repetir);
 
 //Crear un evento de click  utilizando idcapturadoadd.eventlistener("click",function"){}que  
 //te cree una clase css para agregar estilos y un  elemento p con la logica dependiente del horario
-//Logica del horario
 
-if(horas>0 &&  horas< 7 ) {
-    console.log("Es hora de descansar. Apaga y sigue mañana")}
-else if (horas>7 &&  horas< 12 ) {
-    console.log("Buenos días, desayuna fuerte y a darle al código")
+
+
+
+
+
+
+
+
+// Logica minutos
+if(minutos<10 ) {
+    minutos= 0+minutos}
+else if (minutos==2  ) {
+    minutos.innerHTML="Buenos días, desayuna fuerte y a darle al código"
 }  
-else if (horas>12 &&  horas< 14 ) {
-    console.log("Echa un rato más pero no olvides comer")
+else if (minutos==3 ) {
+    minutos.innerHTML="Echa un rato más pero no olvides comer"
 }    
-else if (horas>14 &&  horas< 16 ) {
-    console.log("Espero que hayas comido")
+else if (minutos==4 ) {
+    minutos.innerHTML="Espero que hayas comido"
 }  
-else if (horas>16 &&  horas< 18 ) {
-    console.log("Buenas tardes, el último empujón")
+else if (minutos==5 ) {
+    minutos.innerHTML="Buenas tardes, el último empujón"
 } 
-else if (horas>18 &&  horas< 22 ) {
-    console.log("Esto ya son horas extras, ... piensa en parar pronto")
+else if (minutos==6 ) {
+    minutos.innerHTML="Esto ya son horas extras, ... piensa en parar pronto"
 }  
-else if (horas>22 &&  horas< 0 ) {
-    console.log("Buenas noches, es hora de pensar en parar y descansar")
+else if (minutos==7 ) {
+    minutos.innerHTML="Buenas noches, es hora de pensar en parar y descansar"
+}
+else if (minutos==8 ) {
+    minutos.innerHTML="Buenas tardes, el último empujón"
+} 
+else if (minutos==9 ) {
+    minutos.innerHTML="Esto ya son horas extras, ... piensa en parar pronto"
+}  
+else if (minutos==0 ) {
+    minutos.innerHTML="Buenas noches, es hora de pensar en parar y descansar"
 };
 
-//No se porqué pero no imprime nada en consola
+
+
+
+
+
+
+
+
+// Logica segundos
+if(segundos==1 ) {
+    segundos.innerHTML="0"}
+else if (segundos==2  ) {
+    segundos.innerHTML="Buenos días, desayuna fuerte y a darle al código"
+}  
+else if (segundos==3 ) {
+    segundos.innerHTML="Echa un rato más pero no olvides comer"
+}    
+else if (segundos==4 ) {
+    segundos.innerHTML="Espero que hayas comido"
+}  
+else if (segundos==5 ) {
+    segundos.innerHTML="Buenas tardes, el último empujón"
+} 
+else if (segundos==6 ) {
+    segundos.innerHTML="Esto ya son horas extras, ... piensa en parar pronto"
+}  
+else if (segundos==7 ) {
+    segundos.innerHTML="Buenas noches, es hora de pensar en parar y descansar"
+}
+else if (segundos==8 ) {
+    segundos.innerHTML="Buenas tardes, el último empujón"
+} 
+else if (segundos==9 ) {
+    segundos.innerHTML="Esto ya son horas extras, ... piensa en parar pronto"
+}  
+else if (segundos==0 ) {
+    segundos.innerHTML="Buenas noches, es hora de pensar en parar y descansar"
+};

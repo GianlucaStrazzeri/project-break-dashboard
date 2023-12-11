@@ -1,18 +1,27 @@
 let reloj= document.getElementById("reloj");
 let fecha= document.getElementById("fecha");
 let frase=document.getElementById("frase");
-
+let experimentos=document.getElementById("experimentos");
 
 const repetir = () => {
     const today = new Date();
     const horas = today.getHours();
-    const minutos = today.getMinutes();
-    const segundos = today.getSeconds();
-    const numeroDia= today.getDate(); //11
-    let mesDelAño= today.getMonth(); //Me saca 11
-    const año= today.getFullYear(); //2023
+    let minutos = today.getMinutes();
+    let segundos = today.getSeconds();
+    const numeroDia= today.getDate(); 
+    let mesDelAño= today.getMonth(); 
+    const año= today.getFullYear(); 
    
-    
+    if(segundos<10 ) {
+        segundos = "0"+segundos;
+        };
+
+        if(minutos<10 ) {
+            minutos = "0"+minutos;
+            };
+
+
+
     if (mesDelAño=11){
         mesDelAño="Diciembre"
         }
@@ -72,16 +81,18 @@ const repetir = () => {
         frase.innerHTML="Buenas noches, es hora de pensar en parar y descansar"
     };
 
+
+
+
     
-    
+
+
     
 
     fecha.innerHTML=`Fecha: ${numeroDia}  ${mesDelAño}  ${año}`;
     reloj.innerHTML= `Hora: ${horas} : ${minutos} : ${segundos}`;
    
    
-    
-
 
 };
  
@@ -112,23 +123,4 @@ setInterval(repetir, 1000);
 //te cree una clase css para agregar estilos y un  elemento p con la logica dependiente del horario
 //Logica del horario
 
-//if(horas>0 &&  horas< 7 && minutos <  0) {
-//    console.log("Es hora de descansar. Apaga y sigue mañana")}
-//else if (horas>7 &&  horas< 12 && minutos <  0) {
-//    console.log("Buenos días, desayuna fuerte y a darle al código")
-//}  
-//else if (horas>12 &&  horas< 14 && minutos <  0) {
-//    console.log("Echa un rato más pero no olvides comer")
-//}    
-//else if (horas>14 &&  horas< 16 && minutos <  0) {
-//    console.log("Espero que hayas comido")
-//}  
-//else if (horas>16 &&  horas< 18 && minutos <  0) {
-//    console.log("Buenas tardes, el último empujón")
-//} 
-//else if (horas>18 &&  horas< 22 && minutos <  0) {
-//    console.log("Esto ya son horas extras, ... piensa en parar pronto")
-//}  
-//else if (horas>22 &&  horas< 0 && minutos <  0) {
-//    console.log("Buenas noches, es hora de pensar en parar y descansar")
-//};
+
