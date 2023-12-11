@@ -1,7 +1,7 @@
 let reloj= document.getElementById("reloj");
 let fecha= document.getElementById("fecha");
 let frase=document.getElementById("frase");
-let experimentos=document.getElementById("experimentos");
+
 
 const repetir = () => {
     const today = new Date();
