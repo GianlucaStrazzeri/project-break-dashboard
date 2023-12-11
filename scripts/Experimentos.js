@@ -18,6 +18,13 @@
 
 
 
+
+
+
+
+
 //Passwoord.js
 //Crear un input
 //Crear un botón
+//Creado variables de simbolos, numeros, minusculas y mayusculas
+//Creado un espacio en html en el que tendrá que aparecer el resultado tiene un id=contraseña
