@@ -27,7 +27,8 @@ console.log(valueArr);
 let contraseña=[];
 
 for (i=0;i<valueArr.length/4;i++){
-     //Creo variables iguales a la función por la cantidad de mayusculas y minusculas (26), simbolos (14) y numeros(10)
+  
+//Creo variables iguales a la función por la cantidad de mayusculas y minusculas (26), simbolos (14) y numeros(10)
 let mayúsculasI=getRandomInt(26);//Un numero random entre 26 mayusculas
 let mayúsculasRandom=(mayúsculas[mayúsculasI]);
 contraseña.push( mayúsculasRandom);
