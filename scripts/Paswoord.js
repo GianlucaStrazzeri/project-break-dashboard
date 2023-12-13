@@ -8,9 +8,6 @@ let símbolos= "!@#$%^&*()-_=+";
 let button=document.getElementById("button");
 let insertarContraseña=document.getElementById("areaimpresióncontraseña");
 
-//Creo un addEventiListener al darle click al botón,
-//verifico que funcione imprimiendo en el area de impresión contraseña "Texto"
-button.addEventListener("click",()=>(areaimpresióncontraseña.innerHTML=" Texto"));
 
 //Creo una función getRandomInt que me devuelve un numero casual
 function getRandomInt(max) {
@@ -42,3 +39,7 @@ contraseña.push(símbolosRandom);
 };
 
 console.log(contraseña)
+
+//Creo un addEventiListener al darle click al botón,
+//verifico que funcione imprimiendo en el area de impresión contraseña: la contraseña de 12 digitos
+button.addEventListener("click",()=>(areaimpresióncontraseña.innerHTML=contraseña));
