@@ -45,7 +45,19 @@ table {
 a{
 	text-decoration: none;
 }
-/*Aquí empieza mi codigo  */
+/*Aquí empieza mi codigo css */
+
+.element-left{
+	/*1. Caracteristicas flex */
+	display:flex;
+	flex-direction: column;
+	gap:10px;
+	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
+	
+	/*3. Caracteristicas de fuentes y background */
+	background-color:paleturquoise;
+}
+
 
 .reloj{
 	/*1. Caracteristicas flex */
@@ -58,6 +70,15 @@ a{
 	max-width:500px;
 	/*3. Caracteristicas de fuentes y background */
 	background-color:aqua;
+}
+
+
+.element-right{
+	/*1. Caracteristicas flex */
+	display:flex;
+	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
+	/*3. Caracteristicas de fuentes y background */
+	background-color:brown;
 }
 
 .passwoord{
@@ -80,10 +101,6 @@ a{
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
-	/*Posicion del contenido */
-	position:absolute;
-	right:10%;
-	top:10%;
 	/*2. Caracteristicas de  Tamaños - padding-margins - mobilefirst */
 	max-width:500px;
 	/*3. Caracteristicas de fuentes y background */
