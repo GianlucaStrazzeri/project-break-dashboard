@@ -14,27 +14,34 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
 
-  //Creo variables iguales a la función por la cantidad de mayusculas y minusculas (26), simbolos (14) y numeros(10)
-let mayúsculasI=getRandomInt(26);//Un numero random entre 26 mayusculas
-let mayúsculasRandom=(mayúsculas[mayúsculasI]);
-
-let minúsculasI=getRandomInt(26);//26 minusculas
-let minúsculasRandom=(minúsculas[minúsculasI]);
-
-let númerosI=getRandomInt(10);//10 numeros
-let númerosRandom=(números[númerosI]);
-
-let símbolosI=getRandomInt(14);//14 simbolos
-let símbolosRandom=(símbolos[símbolosI]);
+ 
 
 let value=12;
+let valueArr=[];
+
+for (i=0;i<value;i++){
+valueArr.push(i);
+}
+console.log(valueArr);
 
 let contraseña=[];
 
-for (i=0;i<value/4;i++){
+for (i=0;i<valueArr.length/4;i++){
+     //Creo variables iguales a la función por la cantidad de mayusculas y minusculas (26), simbolos (14) y numeros(10)
+let mayúsculasI=getRandomInt(26);//Un numero random entre 26 mayusculas
+let mayúsculasRandom=(mayúsculas[mayúsculasI]);
 contraseña.push( mayúsculasRandom);
+
+let minúsculasI=getRandomInt(26);//26 minusculas
+let minúsculasRandom=(minúsculas[minúsculasI]);
 contraseña.push(minúsculasRandom);
+
+let númerosI=getRandomInt(10);//10 numeros
+let númerosRandom=(números[númerosI]);
 contraseña.push(númerosRandom);
+
+let símbolosI=getRandomInt(14);//14 simbolos
+let símbolosRandom=(símbolos[símbolosI]);
 contraseña.push(símbolosRandom);
 };
 
