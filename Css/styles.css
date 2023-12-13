@@ -50,6 +50,7 @@ a{
 
 .container{
 	display:flex;
+	width:1400px;
 }
 
 .element-left{
@@ -57,6 +58,7 @@ a{
 	display:flex;
 	flex-direction: column;
 	gap:10px;
+	justify-content: center;
 	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
 	
 	/*3. Caracteristicas de fuentes y background */
@@ -72,7 +74,7 @@ a{
 	flex-direction: column;
 	align-items: center;
 	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
-	max-width:500px;
+	width:500px; /* Cuidado no se está adaptando al movil*/
 	/*3. Caracteristicas de fuentes y background */
 	background-color:aqua;
 }
@@ -85,7 +87,7 @@ a{
 	flex-direction: column;
 	align-items: center;
 	/*2. Caracteristicas de  Tamaños - padding-margins - mobilefirst */
-	max-width:500px;
+	width:500px;  /* Cuidado no se está adaptando al movil*/
 	/*3. Caracteristicas de fuentes y background */
 	background-color:pink;
 }
@@ -94,8 +96,8 @@ a{
 .element-right{
 	/*1. Caracteristicas flex */
 	display:flex;
-	justify-content: flex-end;
 	flex-direction: column;
+	justify-content: center;
 	gap:10px;
 	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
 	/*3. Caracteristicas de fuentes y background */
@@ -110,7 +112,7 @@ a{
 	flex-direction: column;
 	align-items: center;
 	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
-	max-width:500px;
+	width:500px;  /* Cuidado no se está adaptando al movil*/
 	/*3. Caracteristicas de fuentes y background */
 	background-color:yellowgreen;
 }
@@ -124,8 +126,8 @@ gap:20px;
 flex-wrap: wrap;
 flex-direction: column;
 align-items: center;
-/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
-max-width:500px;
+/*2. Caracteristicas Tamaños - padding-margins - mobilefirst(Max-min width)*/
+width:500px;  /* Cuidado no se está adaptando al movil*/
 /*3. Caracteristicas de fuentes y background */
 background-color:aqua;
 }
