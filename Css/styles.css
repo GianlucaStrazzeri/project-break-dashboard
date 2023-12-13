@@ -74,13 +74,17 @@ a{
 }
 
 .link{
-	/*1. Caracteristicas flex */
+	/*1. Caracteristicas flex -direcciones del contenido*/
 	display:flex;
 	gap:20px;
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
-	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
+	/*Posicion del contenido */
+	position:absolute;
+	right:10%;
+	top:10%;
+	/*2. Caracteristicas de  Tamaños - padding-margins - mobilefirst */
 	max-width:500px;
 	/*3. Caracteristicas de fuentes y background */
 	background-color:pink;
