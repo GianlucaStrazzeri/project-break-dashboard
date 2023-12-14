@@ -16,7 +16,7 @@ function getRandomInt(max) {
 
  
 
-let value=12;
+let value=document.getElementById("value").value;
 let valueArr=[];
 
 for (i=0;i<value;i++){
