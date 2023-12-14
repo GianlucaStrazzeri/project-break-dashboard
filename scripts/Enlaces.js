@@ -1,6 +1,13 @@
-let nombre=document.getElementById("nombre");
-
-let enlace=document.getElementById("enlace");
-
+let nombreEnlace=document.getElementById("nombre");
 let ruta=document.getElementById("ruta");
-console.log(nombre,enlace, ruta);
+let guardarEnlace=document.getElementById("guardarEnlacesButton");
+
+
+console.log(nombreEnlace,guardarEnlace, ruta);
+
+//localStorage.clear();
+localStorage.setItem(`nombreWeb`,"");
+localStorage.setItem(`rutaWeb`,"");
+
+let myStoragedNameOfWeb = localStorage.getItem('nombreWeb');
+let myStoragedRutaWeb = localStorage.getItem('rutaWeb');
