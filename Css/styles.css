@@ -89,7 +89,8 @@ a{
 	align-items: center;
 	/*2. Caracteristicas de  Tamaños - padding-margins - mobilefirst */
 	width:500px;  /* Cuidado no se está adaptando al movil*/
-	/*3. Caracteristicas de fuentes y background */
+	/*3. Caracteristicas de fuentes texto y background */
+	text-align: center;
 	background-color:pink;
 }
 

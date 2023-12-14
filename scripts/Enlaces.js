@@ -1,6 +1,7 @@
 let nombreEnlace=document.getElementById("nombre");
 let ruta=document.getElementById("ruta");
 let guardarEnlace=document.getElementById("guardarEnlacesButton");
+let areaparasalvarenlaces=document.getElementById("areaparasalvarenlaces");
 
 
 console.log(nombreEnlace,guardarEnlace, ruta);
@@ -11,3 +12,5 @@ localStorage.setItem(`rutaWeb`,"");
 
 let myStoragedNameOfWeb = localStorage.getItem('nombreWeb');
 let myStoragedRutaWeb = localStorage.getItem('rutaWeb');
+
+areaparasalvarenlaces.innerHTML = `<p> Nombre de la web ${myStoragedNameOfWeb}</p> <p> Ruta relativa:${myStoragedRutaWeb}</p>`;
