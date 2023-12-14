@@ -21,8 +21,7 @@ let valueArr=[];
 
 for (i=0;i<value;i++){
 valueArr.push(i);
-}
-console.log(valueArr);
+};
 
 let contraseña=[];
 
@@ -46,7 +45,7 @@ let símbolosRandom=(símbolos[símbolosI]);
 contraseña.push(símbolosRandom);
 };
 
-console.log(contraseña)
+
 
 //Creo un addEventiListener al darle click al botón,
 //verifico que funcione imprimiendo en el area de impresión contraseña: la contraseña de 12 digitos

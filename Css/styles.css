@@ -75,7 +75,8 @@ a{
 	align-items: center;
 	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
 	width:500px; /* Cuidado no se está adaptando al movil*/
-	/*3. Caracteristicas de fuentes y background */
+	/*3. Caracteristicas de fuentes  texto y background */
+	text-align: center;
 	background-color:aqua;
 }
 
@@ -130,4 +131,10 @@ align-items: center;
 width:500px;  /* Cuidado no se está adaptando al movil*/
 /*3. Caracteristicas de fuentes y background */
 background-color:aqua;
+}
+
+@media screen and (max-width:600px){
+	.reloj, .link, .meteo, .passwoord{
+		width: 300px;
+	}
 }
