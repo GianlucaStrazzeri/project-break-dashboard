@@ -4,8 +4,8 @@ let areaparasalvarenlaces=document.getElementById("areaparasalvarenlaces");
 
 
 guardarEnlace.addEventListener("click", function() {
-    let nombreEnlace=document.getElementById("nombre");
-    let ruta=document.getElementById("ruta");
+    let nombreEnlace=document.getElementById("nombre").value;
+    let ruta=document.getElementById("ruta").value;
     //creo persistencia con localstorage
     localStorage.setItem(`nombreWeb`,nombreEnlace);
     localStorage.setItem(`rutaWeb`,ruta);

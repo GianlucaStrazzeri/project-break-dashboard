@@ -50,3 +50,4 @@ contraseña.push(símbolosRandom);
 //Creo un addEventiListener al darle click al botón,
 //verifico que funcione imprimiendo en el area de impresión contraseña: la contraseña de 12 digitos
 button.addEventListener("click",()=>(areaimpresióncontraseña.innerHTML=contraseña));
+
