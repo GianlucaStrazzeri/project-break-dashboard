@@ -69,6 +69,8 @@ body {
 	gap:10px;
 	justify-content: center;
 	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
+	margin-top: 2%;
+	margin-left: 5%;
 	/*3. Caracteristicas de fuentes y background */
 	/*Pongo el background como transparente para poderlo utilizar después para diferenciar los elementos por
 	si tuviera que hacerme falta otra vez */
@@ -87,7 +89,7 @@ body {
 	/*2. Caracteristicas  de caja: Tamaños - padding-margins borders - mobilefirst */
 	width:500px; /* Cuidado no se está adaptando al movil*/
 	padding:1em; /*Aplica a los 4 lados */
-	border-width: 10px;
+	border-width: 3px;
   	border-style: solid;
   	border-color: black;
 	/*3. Caracteristicas de fuentes  texto y background */
