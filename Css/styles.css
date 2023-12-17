@@ -25,7 +25,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-image: url(../Assets/img1.jpg);
 }
 ol, ul {
 	list-style: none;
@@ -48,10 +47,15 @@ a{
 }
 /*Aquí empieza mi codigo css */
 
+body {
+	background-image: url(../Assets/img2.jpg);
+}
+
 
 .container{
 	display:flex;
 	width:1400px;
+	gap:60px;
 }
 
 .element-left{
@@ -63,37 +67,38 @@ a{
 	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
 	
 	/*3. Caracteristicas de fuentes y background */
-	background-color:paleturquoise;
+	/*Pongo el background como transparente para poderlo utilizar después para diferenciar los elementos por
+	si tuviera que hacerme falta otra vez */
+	background-color:none;
 }
 
 
-.reloj{
+.reloj, .link, .passwoord, .meteo{
 	/*1. Caracteristicas flex */
 	display:flex;
 	gap:20px;
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
-	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
+	/*2. Caracteristicas Tamaños - padding-margins borders - mobilefirst */
 	width:500px; /* Cuidado no se está adaptando al movil*/
+	border-width: 10px;
+  	border-style: solid;
+  	border-color: black;
 	/*3. Caracteristicas de fuentes  texto y background */
 	text-align: center;
-	background-color:aqua;
+	/*Pongo el background como transparente para poderlo utilizar después para diferenciar los elementos por
+	si tuviera que hacerme falta otra vez */
+	background-color:none;
 }
 
-.link{
-	/*1. Caracteristicas flex -direcciones del contenido*/
-	display:flex;
-	gap:20px;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
-	/*2. Caracteristicas de  Tamaños - padding-margins - mobilefirst */
-	width:500px;  /* Cuidado no se está adaptando al movil*/
-	/*3. Caracteristicas de fuentes texto y background */
-	text-align: center;
-	background-color:pink;
+#relojpagestyle{
+	background-color: aliceblue;
+	margin-top: 20%;
+	margin-left: 20%;
 }
+
+
 
 
 .element-right{
@@ -104,36 +109,13 @@ a{
 	gap:10px;
 	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
 	/*3. Caracteristicas de fuentes y background */
-	background-color:brown;
-}
-
-.passwoord{
-	/*1. Caracteristicas flex */
-	display:flex;
-	gap:20px;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
-	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
-	width:500px;  /* Cuidado no se está adaptando al movil*/
-	/*3. Caracteristicas de fuentes y background */
-	background-color:yellowgreen;
+	/*Pongo el background como transparente para poderlo utilizar después para diferenciar los elementos por
+	si tuviera que hacerme falta otra vez */
+	background-color:none;
 }
 
 
 
-.meteo{
-/*1. Caracteristicas flex */
-display:flex;
-gap:20px;
-flex-wrap: wrap;
-flex-direction: column;
-align-items: center;
-/*2. Caracteristicas Tamaños - padding-margins - mobilefirst(Max-min width)*/
-width:500px;  /* Cuidado no se está adaptando al movil*/
-/*3. Caracteristicas de fuentes y background */
-background-color:aqua;
-}
 
 @media screen and (max-width:600px){
 	.reloj, .link, .meteo, .passwoord{
