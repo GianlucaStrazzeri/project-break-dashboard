@@ -99,7 +99,7 @@ body {
 	background-color:none;
 }
 
-#relojpagestyle{
+#relojpagestyle, #linkpagestyle, #passwoordpagestyle{
 	margin-top: 10%;
 	margin-left: 29%;
 }
