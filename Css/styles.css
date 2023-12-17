@@ -58,19 +58,19 @@ body {
 	gap:60px;
 }
 
-.element-left{
+.element-left, .element-right{
 	/*1. Caracteristicas flex */
 	display:flex;
 	flex-direction: column;
 	gap:10px;
 	justify-content: center;
 	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
-	
 	/*3. Caracteristicas de fuentes y background */
 	/*Pongo el background como transparente para poderlo utilizar después para diferenciar los elementos por
 	si tuviera que hacerme falta otra vez */
 	background-color:none;
 }
+
 
 
 .reloj, .link, .passwoord, .meteo{
@@ -98,21 +98,6 @@ body {
 	margin-left: 20%;
 }
 
-
-
-
-.element-right{
-	/*1. Caracteristicas flex */
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	gap:10px;
-	/*2. Caracteristicas Tamaños - padding-margins - mobilefirst */
-	/*3. Caracteristicas de fuentes y background */
-	/*Pongo el background como transparente para poderlo utilizar después para diferenciar los elementos por
-	si tuviera que hacerme falta otra vez */
-	background-color:none;
-}
 
 
 
