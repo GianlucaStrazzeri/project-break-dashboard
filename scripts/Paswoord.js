@@ -9,7 +9,7 @@ let button=document.getElementById("button");
 let insertarContraseña=document.getElementById("areaimpresióncontraseña");
 
 
-//Creo una función getRandomInt que me devuelve un numero casual
+//Creo una función getRandomInt que me devuelve un numero casual utilizando Math.floor y Math.random
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
@@ -19,13 +19,14 @@ function getRandomInt(max) {
 let value=document.getElementById("value").value;
 let valueArr=[];
 
-for (i=0;i<value;i++){
+
+for (i=0;i<value/4;i++){
 valueArr.push(i);
 };
 
 let contraseña=[];
 
-for (i=0;i<valueArr.length/4;i++){
+for (i=0;i<valueArr.length;i++){
   
 //Creo variables iguales a la función por la cantidad de mayusculas y minusculas (26), simbolos (14) y numeros(10)
 let mayúsculasI=getRandomInt(26);//Un numero random entre 26 mayusculas
@@ -43,11 +44,16 @@ contraseña.push(númerosRandom);
 let símbolosI=getRandomInt(14);//14 simbolos
 let símbolosRandom=(símbolos[símbolosI]);
 contraseña.push(símbolosRandom);
-};
-
 
 
 //Creo un addEventiListener al darle click al botón,
 //verifico que funcione imprimiendo en el area de impresión contraseña: la contraseña de 12 digitos
 button.addEventListener("click",()=>(areaimpresióncontraseña.innerHTML=contraseña));
+
+//Devuelve 12 valores diferentes
+};
+
+
+
+
 

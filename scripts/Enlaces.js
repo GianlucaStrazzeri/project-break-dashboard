@@ -15,8 +15,11 @@ guardarEnlace.addEventListener("click", function() {
     let myStoragedRutaWebStringify= JSON.stringify(myStoragedRutaWeb);
     console.log(myStoragedNameOfWebStringify,myStoragedRutaWebStringify)
 
-areaparasalvarenlaces.innerHTML = `<p> Nombre de la web ${myStoragedNameOfWebStringify}</p> 
-<p> Ruta relativa:${myStoragedRutaWebStringify}</p>`;})  
+areaparasalvarenlaces.innerHTML += `<p> Nombre de la web:</p> 
+<p> ${myStoragedNameOfWebStringify} </p>
+<p> Ruta relativa: </p>  
+<p>${myStoragedRutaWebStringify}</p>  `;})  
 
 
 //JSON.stringify() pasa un objeto a un string;
+//<a src="${myStoragedRutaWebStringify}">
