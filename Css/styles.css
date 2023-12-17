@@ -44,6 +44,7 @@ table {
 
 a{
 	text-decoration: none;
+	color:black;
 }
 /*Aquí empieza mi codigo css */
 
@@ -51,6 +52,9 @@ body {
 	background-image: url(../Assets/img2.jpg);
 }
 
+.unicodes{
+	padding:1em; /*Aplica a los 4 lados */
+}
 
 .container{
 	display:flex;
@@ -80,8 +84,9 @@ body {
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
-	/*2. Caracteristicas Tamaños - padding-margins borders - mobilefirst */
+	/*2. Caracteristicas  de caja: Tamaños - padding-margins borders - mobilefirst */
 	width:500px; /* Cuidado no se está adaptando al movil*/
+	padding:1em; /*Aplica a los 4 lados */
 	border-width: 10px;
   	border-style: solid;
   	border-color: black;
