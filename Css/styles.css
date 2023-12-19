@@ -44,12 +44,15 @@ table {
 
 a{
 	text-decoration: none;
-	color:black;
+	color:white;
 }
 /*Aquí empieza mi codigo css */
 
 body {
 	background-image: url(../Assets/img2.jpg);
+	background-repeat: no-repeat; /*Hace que la imagen no se repita */
+    background-position: center; /*Centra la imagen  */
+    background-size: cover; /*La imagen cubre el tamaño de la pantalla */
 }
 
 .unicodes{
@@ -75,6 +78,7 @@ body {
 	/*Pongo el background como transparente para poderlo utilizar después para diferenciar los elementos por
 	si tuviera que hacerme falta otra vez */
 	background-color:none;
+	color:white;
 }
 
 
@@ -104,7 +108,10 @@ body {
 	margin-left: 29%;
 }
 
-
+button{
+	background-color:green;
+	color:white;
+}
 
 
 

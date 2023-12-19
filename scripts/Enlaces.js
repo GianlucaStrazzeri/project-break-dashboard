@@ -1,6 +1,6 @@
 //Guardo las variables con su id desde el html
 let guardarEnlace=document.getElementById("guardarEnlacesButton");
-let areaparasalvarenlaces=document.getElementById("areaparasalvarenlaces");
+let areaparaguardarenlaces=document.getElementById("areaparaguardarenlaces");
 
 
 guardarEnlace.addEventListener("click", function() {
@@ -15,11 +15,11 @@ guardarEnlace.addEventListener("click", function() {
     let myStoragedRutaWebStringify= JSON.stringify(myStoragedRutaWeb);
     console.log(myStoragedNameOfWebStringify,myStoragedRutaWebStringify)
 
-areaparasalvarenlaces.innerHTML += `<p> Nombre de la web:</p> 
-<p> ${myStoragedNameOfWebStringify} </p>
-<p> Ruta relativa: </p>  
-<p>${myStoragedRutaWebStringify}</p>  `;})  
+    areaparaguardarenlaces.innerHTML += ` <p> ${myStoragedNameOfWebStringify} </p>  
+${myStoragedRutaWebStringify}  `;})  //No devuelve el enlace
 
 
 //JSON.stringify() pasa un objeto a un string;
 //<a src="${myStoragedRutaWebStringify}">
+
+
