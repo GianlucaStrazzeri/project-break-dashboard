@@ -48,8 +48,10 @@ a{
 }
 /*Aquí empieza mi codigo css */
 
-body {
-	background-image: url(../Assets/img2.jpg);
+
+
+#background{
+	/*background-image: url(../Assets/img2.jpg); Haría aparecer la imagen desde el principio*/
 	background-repeat: no-repeat; /*Hace que la imagen no se repita */
     background-position: center; /*Centra la imagen  */
     background-size: cover; /*La imagen cubre el tamaño de la pantalla */

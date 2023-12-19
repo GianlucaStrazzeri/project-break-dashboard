@@ -8,6 +8,6 @@ let imagenes=["https://unsplash.com/es/fotos/fotografia-aerea-de-una-montana-ver
 console.log(imagenes);
 
 let background = document.getElementById("background");
-background.style.backgroundImage = "url('https://htmlmasters.tech/wp-content/uploads/logo_small.png')";
+background.style.backgroundImage = "url('../Assets/img3.jpg')";
 
 //mirar esta web https://htmlmasters.tech/cambiar-background-image-con-javascript/
