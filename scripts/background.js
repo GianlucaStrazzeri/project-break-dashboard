@@ -1,10 +1,3 @@
-
-//document.body.style.backgroundColor = "url('../Assets/img1.jpg')";
-
-//si las imagenes tienen que cambiar cada  15 segundos habrá que poner un setTimeOut15000 
-//a la función que vayamos a crear
-
-
 let background = document.getElementById("background");
 
 let imagenesBackground=["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg","img6.jpg","img7.jpg","img8.jpg",]
@@ -64,32 +57,26 @@ const promesa1 = new Promise((resolve) => {
   });
   
   promesa1.then((numeroAleatorio1) => {
-    console.log(` ${numeroAleatorio1}`);
     return promesa2;
   });
 
   promesa2.then((numeroAleatorio2) => {
-    console.log(` ${numeroAleatorio2}`);
     return promesa3;
   });
   
   promesa3.then((numeroAleatorio3) => {
-    console.log(` ${numeroAleatorio3}`);
     return promesa4;
   });
 
   promesa4.then((numeroAleatorio1) => {
-    console.log(` ${numeroAleatorio1}`);
     return promesa5;
   });
 
   promesa5.then((numeroAleatorio2) => {
-    console.log(` ${numeroAleatorio2}`);
     return promesa6;
   });
 
   promesa6.then((numeroAleatorio1) => {
-    console.log(` ${numeroAleatorio1}`);
   });
 
  

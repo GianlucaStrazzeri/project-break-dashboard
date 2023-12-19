@@ -1,7 +1,6 @@
 //Guardo las variables con su id desde el html
-let guardarEnlace=document.getElementById("guardarEnlacesButton");
-let areaparaguardarenlaces=document.getElementById("areaparaguardarenlaces");
-
+let guardarEnlace=document.getElementById("EnlacesButton");
+let areaparaguardarenlaces=document.getElementById("areaenlaces");
 
 guardarEnlace.addEventListener("click", function() {
     let nombreEnlace=document.getElementById("nombre").value;

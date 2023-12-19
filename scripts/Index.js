@@ -1,1 +1,0 @@
-console.log("Todos los Javascript están conectados a index");
