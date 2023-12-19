@@ -20,7 +20,7 @@ const promesa1 = new Promise((resolve) => {
       numeroAleatorio1 = Math.floor(Math.random() * 10);
       background.style.backgroundImage = `url('../Assets/${imagenesBackground[numeroAleatorio1]}')`;
       resolve(numeroAleatorio1);
-    }, 15000);
+    }, 5000);
   });
   
   const promesa2 = new Promise((resolve) => {
@@ -28,7 +28,7 @@ const promesa1 = new Promise((resolve) => {
       numeroAleatorio2 = Math.floor(Math.random() * 10);
       background.style.backgroundImage = `url('../Assets/${imagenesBackground[numeroAleatorio2]}')`;
       resolve(numeroAleatorio2);
-    }, 30000);
+    }, 10000);
   });
   
   const promesa3 = new Promise((resolve) => {
@@ -36,7 +36,7 @@ const promesa1 = new Promise((resolve) => {
       numeroAleatorio3 = Math.floor(Math.random() * 10);
       background.style.backgroundImage = `url('../Assets/${imagenesBackground[numeroAleatorio3]}')`;
       resolve(numeroAleatorio3);
-    }, 45000);
+    }, 15000);
   });
 
   const promesa4 = new Promise((resolve) => {
@@ -44,7 +44,7 @@ const promesa1 = new Promise((resolve) => {
       numeroAleatorio4 = Math.floor(Math.random() * 10);
       background.style.backgroundImage = `url('../Assets/${imagenesBackground[numeroAleatorio4]}')`;
       resolve(numeroAleatorio4);
-    }, 60000);
+    }, 20000);
   });
   
   const promesa5 = new Promise((resolve) => {
@@ -52,7 +52,7 @@ const promesa1 = new Promise((resolve) => {
       numeroAleatorio5 = Math.floor(Math.random() * 10);
       background.style.backgroundImage = `url('../Assets/${imagenesBackground[numeroAleatorio5]}')`;
       resolve(numeroAleatorio5);
-    }, 75000);
+    }, 25000);
   });
   
   const promesa6 = new Promise((resolve) => {
@@ -60,7 +60,7 @@ const promesa1 = new Promise((resolve) => {
       numeroAleatorio6 = Math.floor(Math.random() * 10);
       background.style.backgroundImage = `url('../Assets/${imagenesBackground[numeroAleatorio6]}')`;
       resolve(numeroAleatorio6);
-    }, 90000);
+    }, 30000);
   });
   
   promesa1.then((numeroAleatorio1) => {
