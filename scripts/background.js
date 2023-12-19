@@ -10,4 +10,9 @@ console.log(imagenes);
 let background = document.getElementById("background");
 background.style.backgroundImage = "url('../Assets/img3.jpg')";
 
-//mirar esta web https://htmlmasters.tech/cambiar-background-image-con-javascript/
+
+
+
+
+
+ 
