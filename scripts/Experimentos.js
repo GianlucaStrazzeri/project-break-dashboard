@@ -33,11 +33,11 @@
 //Capturar el botón con id="button"
 //Crear un addEventListener click del botón insertar texto
 
-
-let array =["ABCDEFGHIJKLMNOPQRSTUVWXYZ","abcdefghijklmnopqrstuvwxyz","0123456789","!@#$%^&*()-_=+"];
-console.log(`Se ha creado una variable con valor de un array: ${array} `);
-
-
 //Math.floor(Math.random(value));
 
 //for (i=0;i<value/4;i++){//devuelve cuatro valores para la contraseña independientemente del valor value
+
+
+
+
+
