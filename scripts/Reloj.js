@@ -1,9 +1,9 @@
-let relo= document.getElementById("relo");
-let fecha= document.getElementById("fecha");
-let frase=document.getElementById("frase");
+let clock= document.getElementById("clock");
+let data= document.getElementById("data");
+let fraseMotivación=document.getElementById("fraseMotivación");
 
 
-const repetir = () => {
+const rep = () => {
     const today = new Date();
     const horas = today.getHours();
     let minutos = today.getMinutes();
@@ -61,30 +61,30 @@ const repetir = () => {
 
     //Logica Frases
     if(horas>0 &&  horas< 7 ) {
-        frase.innerHTML="Es hora de descansar. Apaga y sigue mañana"}
+        fraseMotivación.innerHTML="Es hora de descansar. Apaga y sigue mañana"}
     else if (horas>=7 &&  horas<= 12 ) {
-        frase.innerHTML="Buenos días, desayuna fuerte y a darle al código"
+        fraseMotivación.innerHTML="Buenos días, desayuna fuerte y a darle al código"
     }  
     else if (horas>=12 &&  horas<= 14 ) {
-        frase.innerHTML="Echa un rato más pero no olvides comer"
+        fraseMotivación.innerHTML="Echa un rato más pero no olvides comer"
     }    
     else if (horas>=14 &&  horas<= 16 ) {
-        frase.innerHTML="Espero que hayas comido"
+        fraseMotivación.innerHTML="Espero que hayas comido"
     }  
     else if (horas>=16 &&  horas<= 18 ) {
-        frase.innerHTML="Buenas tardes, el último empujón"
+        fraseMotivación.innerHTML="Buenas tardes, el último empujón"
     } 
     else if (horas>=18 &&  horas<= 22 ) {
-        frase.innerHTML="Esto ya son horas extras, ... piensa en parar pronto"
+        fraseMotivación.innerHTML="Esto ya son horas extras, ... piensa en parar pronto"
     }  
     else if (horas>=22 &&  horas<= 0 ) {
-        frase.innerHTML="Buenas noches, es hora de pensar en parar y descansar"
+        fraseMotivación.innerHTML="Buenas noches, es hora de pensar en parar y descansar"
     };
 
     
 
-    fecha.innerHTML=`Fecha: ${numeroDia}  ${mesDelAño}  ${año}`;
-    relo.innerHTML= `&#128368; Hora: ${horas} : ${minutos} : ${segundos}`;
+    data.innerHTML=`Fecha: ${numeroDia}  ${mesDelAño}  ${año}`;
+    clock.innerHTML= `&#128368; Hora: ${horas} : ${minutos} : ${segundos}`;
    
    
 
@@ -92,7 +92,7 @@ const repetir = () => {
  
 
 
-setInterval(repetir, 1000);
+setInterval(rep, 1000);
 
 
 
