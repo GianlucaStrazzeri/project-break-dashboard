@@ -1,5 +1,3 @@
-console.log("Todos los Javascript están conectados a index.html");
-
 //                                          background code
 let background = document.getElementById("background");
 
@@ -84,7 +82,7 @@ const promesa1 = new Promise((resolve) => {
 
  
 
-console.log("background-conectado");
+
 
 
 

@@ -81,4 +81,3 @@ const promesa1 = new Promise((resolve) => {
 
  
 
-console.log("background-conectado");
