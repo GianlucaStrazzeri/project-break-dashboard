@@ -118,18 +118,19 @@ button{
 
 
 
-@media screen and (max-width:700px){ /*A 700px de tamaño cambia a 300px de ancho */
+@media screen and (max-width:900px){ /*A 700px de tamaño cambia a 300px de ancho */
 	.reloj, .link, .meteo, .passwoord{
 		width: 300px;
 	}
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:900px){
 	.container, .background{
-		width: 700px;
+		width: 900px; 
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 		justify-content: center ;
 	}
-}/*Modifica tamaño de body al reducir la pantalla, la foto se adapta al tamaño movil */
+}/*Modifica tamaño de body al reducir la pantalla, la foto se adapta al tamaño movil
+ utilizar el size:cover */
 

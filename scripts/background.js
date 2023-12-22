@@ -1,6 +1,6 @@
 let background = document.getElementById("background");
 
-let imagenesBackground=["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg","img6.jpg","img7.jpg","img8.jpg",]
+let imagenesBackground=["img0.jpg","img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg","img6.jpg","img7.jpg","img8.jpg","img9.jpg"]
 
 
 background.style.backgroundImage = `url('../Assets/${imagenesBackground[4]}')`;//Establece un background inicial
