@@ -41,3 +41,10 @@
 
 
 
+@media screen and (max-width:700px){ /*A 400px explotan los hijos de container pero se ponen uno encima del otro */
+	.container{
+		width: 400px;
+		
+		flex-direction: column;
+	}
+}

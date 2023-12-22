@@ -103,7 +103,7 @@ a{
 	/*Pongo el background como transparente para poderlo utilizar después para diferenciar los elementos por
 	si tuviera que hacerme falta otra vez */
 	background-color:grey;
-	opacity: 0.8; /*Añade opacidad al elemento */
+	opacity: 0.8; /*Añade opacidad/transparencia al elemento */
 }
 
 #relojpagestyle, #linkpagestyle, #passwoordpagestyle{
@@ -118,8 +118,18 @@ button{
 
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){ /*A 700px de tamaño cambia a 300px de ancho */
 	.reloj, .link, .meteo, .passwoord{
 		width: 300px;
 	}
 }
+
+@media screen and (max-width:700px){
+	.container, .background{
+		width: 700px;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center ;
+	}
+}/*Modifica tamaño de body al reducir la pantalla, la foto se adapta al tamaño movil */
+
