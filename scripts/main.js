@@ -107,7 +107,7 @@ guardarEnlace.addEventListener("click", function() {
 
     areaparaguardarenlaces.innerHTML += `<div class="linkcontainer">
      <p> ${myStoragedNameOfWebStringify} </p>  
-    U+0058 </div> `;})  //No devuelve el enlace
+     &#120; </div> `;})  //No devuelve el enlace
 
 
 //JSON.stringify() pasa un objeto a un string;
