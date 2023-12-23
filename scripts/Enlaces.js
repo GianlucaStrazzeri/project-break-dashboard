@@ -19,7 +19,7 @@ saveLink.addEventListener("click", function() {
     
 
     areaLink.innerHTML += `<div class="linkcontainer ">
-    <p> ${myStoragedRutaWebStringify}  </p id=xlink">U+0058 </div>`
+    <p> ${myStoragedRutaWebStringify}  </p id=xlink">&#120; </div>`
 
     linkcontainer=document.getElementById("xlink");
     linkcontainer.addEventListener("click", function(){

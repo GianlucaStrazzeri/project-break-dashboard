@@ -106,8 +106,19 @@ guardarEnlace.addEventListener("click", function() {
     console.log(myStoragedNameOfWebStringify,myStoragedRutaWebStringify)
 
     areaparaguardarenlaces.innerHTML += `<div class="linkcontainer">
-     <p> ${myStoragedNameOfWebStringify} </p>  
-     &#120; </div> `;})  //No devuelve el enlace
+     <p> ${myStoragedRutaweb} </p>  
+     &#120; </div> `;
+    
+     //Creo una clase linkcontainer para mdificar el css y un id x link para modifcar el storage ahciendo click
+     areaLink.innerHTML += `<div class="linkcontainer "> 
+    <p> ${myStoragedRutaWebStringify}  </p id=xlink">&#120; </div>`
+
+    linkcontainer=document.getElementById("xlink");
+    linkcontainer.addEventListener("click", function(){
+        removeItem(`${myStoragedRutaWebStringify}`)
+    })
+
+    })  //No devuelve el enlace
 
 
 //JSON.stringify() pasa un objeto a un string;
