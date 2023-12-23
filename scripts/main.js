@@ -117,10 +117,10 @@ guardarEnlace.addEventListener("click", function() {
 
     })  //Devuelve el enlace pero no es clickable
 
-    xlink=document.getElementById("xlink");
-    xlink.addEventListener("click", function(){
-        removeItem(`${myStoragedRutaWebStringify}`)
-    })
+  //  xlink=document.getElementById("xlink");
+  //  xlink.addEventListener("click", function(){
+  //      removeItem(`${myStoragedRutaWebStringify}`)
+  //  })
 
 
 
@@ -128,7 +128,7 @@ guardarEnlace.addEventListener("click", function() {
 //codigo reloj
 let reloj= document.getElementById("reloj");
 let fecha= document.getElementById("fecha");
-let frase=document.getElementById("frase");
+
 
 
 const repetir = () => {
