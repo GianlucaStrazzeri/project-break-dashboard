@@ -15,8 +15,8 @@ const fetchData = async () => {
 }
 const data = await response.json();
 console.log(data);
-const {country, name, region} = location;
-console.log(Object.values(data.location));
+const locationArr= (Object.values(data.location));
+ciudad.innerHTML=locationArr[0];
 }catch (error){
 console.error(error);
 }
