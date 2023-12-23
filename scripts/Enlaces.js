@@ -1,6 +1,7 @@
 //Guardo las variables con su id desde el html
 let saveLink=document.getElementById("LinkButton");
 let areaLink=document.getElementById("areaenlaces");
+let xlink;
 
 //Creo una función de click llamada saveLink creo dos variables que capturan dos elementos del html
 // su valor utilizando .value
@@ -17,8 +18,14 @@ saveLink.addEventListener("click", function() {
     let myStoragedRutaWebStringify= JSON.stringify(myStoragedRutaWeb);
     
 
-    areaLink.innerHTML += `<div class="linkcontainer">
-    <p> ${myStoragedRutaWebStringify}  </p>U+0058 </div>`
+    areaLink.innerHTML += `<div class="linkcontainer ">
+    <p> ${myStoragedRutaWebStringify}  </p id=xlink">U+0058 </div>`
+
+    linkcontainer=document.getElementById("xlink");
+    linkcontainer.addEventListener("click", function(){
+        removeItem(`${myStoragedRutaWebStringify}`)
+    }
+
     ;}) //De esta forma si me lo reconoce como una web no permite entrar
     //areaLink.innerHTML += `<a src="${myStoragedRutaWebStringify}" ${myStoragedRutaWebStringify} >  `;})  //No imprime nada
 
