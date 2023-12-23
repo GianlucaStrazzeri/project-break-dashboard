@@ -116,6 +116,12 @@ button{
 	color:white;
 }
 
+.linkcontainer{
+	display:flex;
+	background-color: aquamarine;
+	gap:20px;
+	justify-content: space-between;
+}
 
 
 @media screen and (max-width:900px){ /*A 700px de tamaño cambia a 300px de ancho */

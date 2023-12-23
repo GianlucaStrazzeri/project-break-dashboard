@@ -16,7 +16,7 @@ fetch('https://v2.jokeapi.dev/joke/Any?lang=es&blacklistFlags=sexist')
           zonapariciónclimatica.innerText= data;
         })
         .catch((error) => {
-          zonapariciónclimatica.innerText = 'No se puede  cargar el chiste';
+          zonapariciónclimatica.innerText = '<p>No se puede  cargar el chiste</p>';
             });
         
 
