@@ -17,7 +17,8 @@ saveLink.addEventListener("click", function() {
     let myStoragedRutaWebStringify= JSON.stringify(myStoragedRutaWeb);
     
 
-    areaLink.innerHTML += `<p> ${myStoragedRutaWebStringify}  </p> `;}) //De esta forma si me lo reconoce como una web no permite entrar
+    areaLink.innerHTML += `<p> ${myStoragedRutaWebStringify}  </p> `
+    U+0058;}) //De esta forma si me lo reconoce como una web no permite entrar
     //areaLink.innerHTML += `<a src="${myStoragedRutaWebStringify}" ${myStoragedRutaWebStringify} >  `;})  //No imprime nada
 
 //para ver localStorage tengo que darle a inspecciónare y luego aplicación
