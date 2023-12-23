@@ -24,7 +24,7 @@ saveLink.addEventListener("click", function() {
     linkcontainer=document.getElementById("xlink");
     linkcontainer.addEventListener("click", function(){
         removeItem(`${myStoragedRutaWebStringify}`)
-    }
+    })
 
     ;}) //De esta forma si me lo reconoce como una web no permite entrar
     //areaLink.innerHTML += `<a src="${myStoragedRutaWebStringify}" ${myStoragedRutaWebStringify} >  `;})  //No imprime nada
