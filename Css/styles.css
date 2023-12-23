@@ -106,7 +106,7 @@ a{
 	opacity: 0.8; /*Añade opacidad/transparencia al elemento */
 }
 
-#relojpagestyle, #linkpagestyle, #passwoordpagestyle{
+#relojpagestyle, #linkpagestyle, #passwoordpagestyle, #meteopagestyle{
 	margin-top: 10%;
 	margin-left: 29%;
 }
