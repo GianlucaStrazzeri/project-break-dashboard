@@ -1,3 +1,5 @@
+let zonapariciónclimatica =document.getElementById("zonapariciónclimatica");
+
 let apiKey = ["77e828056a1d4ceea61213842231912"];
 let city= ["Alicante - Spain"];
 
@@ -11,7 +13,12 @@ fetch('https://v2.jokeapi.dev/joke/Any?lang=es&blacklistFlags=sexist')
         })
         .then((data) => {
           console.log(data);
-        });
+          zonapariciónclimatica.innerText= data;
+        })
+        .catch((error) => {
+          zonapariciónclimatica.innerText = 'No se puede  cargar el chiste';
+            });
+        
 
 //Estructura fetch ejercicios
 //const obtenerChiste = document.getElementById('obtenerChiste');
