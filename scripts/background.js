@@ -3,7 +3,7 @@ let background = document.getElementById("background");
 let imagenesBackground=["img0.jpg","img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg","img6.jpg","img7.jpg","img8.jpg","img9.jpg"]
 
 
-background.style.backgroundImage = `url('../Assets/${imagenesBackground[4]}')`;//Establece un background inicial
+background.style.backgroundImage = `url('./Assets/${imagenesBackground[4]}')`;//Establece un background inicial
 
 
  
@@ -11,7 +11,7 @@ background.style.backgroundImage = `url('../Assets/${imagenesBackground[4]}')`;/
 const promesa1 = new Promise((resolve) => {
     setTimeout(() => {
       numeroAleatorio1 = Math.floor(Math.random() * 10);
-      background.style.backgroundImage = `url('../Assets/${imagenesBackground[numeroAleatorio1]}')`;
+      background.style.backgroundImage = `url('./Assets/${imagenesBackground[numeroAleatorio1]}')`;
       resolve(numeroAleatorio1);
     }, 5000);
   });
@@ -19,7 +19,7 @@ const promesa1 = new Promise((resolve) => {
   const promesa2 = new Promise((resolve) => {
     setTimeout(() => {
       numeroAleatorio2 = Math.floor(Math.random() * 10);
-      background.style.backgroundImage = `url('../Assets/${imagenesBackground[numeroAleatorio2]}')`;
+      background.style.backgroundImage = `url('./Assets/${imagenesBackground[numeroAleatorio2]}')`;
       resolve(numeroAleatorio2);
     }, 10000);
   });
@@ -27,7 +27,7 @@ const promesa1 = new Promise((resolve) => {
   const promesa3 = new Promise((resolve) => {
     setTimeout(() => {
       numeroAleatorio3 = Math.floor(Math.random() * 10);
-      background.style.backgroundImage = `url('../Assets/${imagenesBackground[numeroAleatorio3]}')`;
+      background.style.backgroundImage = `url('./Assets/${imagenesBackground[numeroAleatorio3]}')`;
       resolve(numeroAleatorio3);
     }, 15000);
   });
@@ -35,7 +35,7 @@ const promesa1 = new Promise((resolve) => {
   const promesa4 = new Promise((resolve) => {
     setTimeout(() => {
       numeroAleatorio4 = Math.floor(Math.random() * 10);
-      background.style.backgroundImage = `url('../Assets/${imagenesBackground[numeroAleatorio4]}')`;
+      background.style.backgroundImage = `url('./Assets/${imagenesBackground[numeroAleatorio4]}')`;
       resolve(numeroAleatorio4);
     }, 20000);
   });
@@ -43,7 +43,7 @@ const promesa1 = new Promise((resolve) => {
   const promesa5 = new Promise((resolve) => {
     setTimeout(() => {
       numeroAleatorio5 = Math.floor(Math.random() * 10);
-      background.style.backgroundImage = `url('../Assets/${imagenesBackground[numeroAleatorio5]}')`;
+      background.style.backgroundImage = `url('./Assets/${imagenesBackground[numeroAleatorio5]}')`;
       resolve(numeroAleatorio5);
     }, 25000);
   });
@@ -51,7 +51,7 @@ const promesa1 = new Promise((resolve) => {
   const promesa6 = new Promise((resolve) => {
     setTimeout(() => {
       numeroAleatorio6 = Math.floor(Math.random() * 10);
-      background.style.backgroundImage = `url('../Assets/${imagenesBackground[numeroAleatorio6]}')`;
+      background.style.backgroundImage = `url('./Assets/${imagenesBackground[numeroAleatorio6]}')`;
       resolve(numeroAleatorio6);
     }, 30000);
   });
