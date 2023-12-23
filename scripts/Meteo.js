@@ -1,4 +1,3 @@
-let zonapariciónclimatica =document.getElementById("zonapariciónclimatica");
 let apiKey = ["77e828056a1d4ceea61213842231912"];
 let city= ["Alicante - Spain"];
 let ciudad=document.getElementById("ciudad");
@@ -25,6 +24,7 @@ const icon=(currentArr[5].icon);
 ciudad.innerHTML=locationArr[0]+ " " + locationArr[2];
 temperatura.innerHTML=`<p> Temperatura: ${currentArr[2]}</p>
 <p> Humedad: ${currentArr[6]} % </p>
+<p> Viento por Hora: ${currentArr[21]} </p>
 <img src="https:${icon}"> `;
 //zonapariciónclimatica.innerHTML=`<img src=https=${}>`;
 }catch (error){
