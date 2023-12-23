@@ -91,7 +91,7 @@ const promesa1 = new Promise((resolve) => {
 
 //Guardo las variables con su id desde el html
 let guardarEnlace=document.getElementById("guardarEnlacesButton");
-let areaparaguardarenlaces=document.getElementById("areaparaguardarenlaces");
+
 
 guardarEnlace.addEventListener("click", function() {
     let nombreEnlace=document.getElementById("nombre").value;
@@ -102,27 +102,28 @@ guardarEnlace.addEventListener("click", function() {
     let myStoragedNameOfWeb = localStorage.getItem('nombreWeb');
     let myStoragedNameOfWebStringify= JSON.stringify(myStoragedNameOfWeb);
     let myStoragedRutaWeb = localStorage.getItem('rutaWeb');
+    //JSON.stringify() pasa un objeto a un string;
     let myStoragedRutaWebStringify= JSON.stringify(myStoragedRutaWeb);
-    console.log(myStoragedNameOfWebStringify,myStoragedRutaWebStringify)
+    console.log(myStoragedNameOfWebStringify,myStoragedRutaWeb)
 
-    areaparaguardarenlaces.innerHTML += `<div class="linkcontainer">
-     <p> ${myStoragedRutaweb} </p>  
-     &#120; </div> `;
-    
-     //Creo una clase linkcontainer para mdificar el css y un id x link para modifcar el storage ahciendo click
-     areaLink.innerHTML += `<div class="linkcontainer "> 
-    <p> ${myStoragedRutaWebStringify}  </p id=xlink">&#120; </div>`
+    let areaParaGuardarEnlaces=document.getElementById("areaparaguardarenlaces");
+    //Creo una clase "linkcontainer" para modificar el css y un id "xlink"
+    // para modifcar el storage haciendo click
 
-    linkcontainer=document.getElementById("xlink");
-    linkcontainer.addEventListener("click", function(){
+    //En alternativa se podría probar con `<a src="${myStoragedRutaWebStringify}" `>
+    areaParaGuardarEnlaces.innerHTML += `<div class="linkcontainer">
+     <p> ${myStoragedRutaWebStringify} </p>  
+     <button id=xlink">&#120;</button> </div> `;
+
+    })  //Devuelve el enlace pero no es clickable
+
+    xlink=document.getElementById("xlink");
+    xlink.addEventListener("click", function(){
         removeItem(`${myStoragedRutaWebStringify}`)
     })
 
-    })  //No devuelve el enlace
 
 
-//JSON.stringify() pasa un objeto a un string;
-//<a src="${myStoragedRutaWebStringify}">
 
 //codigo reloj
 let reloj= document.getElementById("reloj");
