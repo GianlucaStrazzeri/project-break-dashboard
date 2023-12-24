@@ -189,7 +189,7 @@ temperatura.innerHTML= `<img src="https:${icon}"> <br>
 ${locationArr[0]}   ${locationArr[2]}
 <p> Temperatura: ${currentArr[2]}</p>
 <p> Humedad: ${currentArr[6]} % </p>
-<p> Viento por Hora: ${currentArr[21]} </p>
+<p> Viento por Hora: ${currentArr[21]} km/h </p>
  `;
 //zonapariciónclimatica.innerHTML=`<img src=https=${}>`;
 }catch (error){
