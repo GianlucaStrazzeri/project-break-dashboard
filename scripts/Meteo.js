@@ -9,7 +9,7 @@ const fetchData = async () => {
   let city= ["Alicante - Spain"];
   try{
     
- const response = await fetch (`http://api.weatherapi.com/v1/current.json?key=77e828056a1d4ceea61213842231912&q=${city}&aqi=no`);
+ const response = await fetch (`https://api.weatherapi.com/v1/current.json?key=77e828056a1d4ceea61213842231912&q=${city}&aqi=no`);
  if (!response.ok) {
  throw new Error (`Error`);
 }
