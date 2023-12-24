@@ -1,9 +1,8 @@
+                          //meteo.js
 let apiKey = ["77e828056a1d4ceea61213842231912"];
 let city= ["Alicante - Spain"];
 
 let temperatura=document.getElementById("temperatura");
-
-
 
 const fetchData = async () => {
   let city= ["Alicante - Spain"];
