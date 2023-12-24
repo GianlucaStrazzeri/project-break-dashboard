@@ -133,6 +133,12 @@ button:hover{
 }
 
 
+
+.meteo-container{
+	display:flex;
+	gap:10px;
+}
+
 @media screen and (max-width:900px){ /*A 700px de tamaño cambia a 300px de ancho */
 	.reloj, .link, .meteo, .passwoord{
 		width: 300px;
