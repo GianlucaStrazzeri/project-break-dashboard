@@ -54,8 +54,10 @@ const dataTomorrow = await responseTomorrow.json();
 const forecastArrTomorrow= (Object.values(dataTomorrow.forecast));
 const forecastArrTomorrow0= (Object.values(forecastArrTomorrow[0]));
 const iconTomorrow=(forecastArrTomorrow0[0].day.condition.icon);
+const maxTemperaturaTomorrow=(forecastArrTomorrow0[0].day.maxtemp_c);
 meteo1día.innerHTML+= `<div class="meteo-container">
 ${forecastArrTomorrow0[0].date}
+${maxTemperaturaTomorrow} &#176;
  <img src="https:${iconTomorrow}"> <br>
  </div>`;
 }catch (error){
@@ -85,8 +87,10 @@ const dataTomorrow = await responseTomorrow.json();
 const forecastArrTomorrow= (Object.values(dataTomorrow.forecast));
 const forecastArrTomorrow0= (Object.values(forecastArrTomorrow[0]));
 const iconTomorrow=(forecastArrTomorrow0[0].day.condition.icon);
+const maxTemperaturaTomorrow=(forecastArrTomorrow0[0].day.maxtemp_c);
 meteo1día.innerHTML+= `<div class="meteo-container">
 ${forecastArrTomorrow0[0].date}
+${maxTemperaturaTomorrow} &#176;
  <img src="https:${iconTomorrow}"> <br>
  </div>`;
 }catch (error){
@@ -109,10 +113,13 @@ const fetchDataThreedays = async () => {
  }
  const dataTomorrow = await responseTomorrow.json();
  const forecastArrTomorrow= (Object.values(dataTomorrow.forecast));
+ console.log(forecastArrTomorrow);
  const forecastArrTomorrow0= (Object.values(forecastArrTomorrow[0]));
  const iconTomorrow=(forecastArrTomorrow0[0].day.condition.icon);
+ const maxTemperaturaTomorrow=(forecastArrTomorrow0[0].day.maxtemp_c);
  meteo1día.innerHTML+= ` <div class="meteo-container">
  ${forecastArrTomorrow0[0].date}
+ ${maxTemperaturaTomorrow} &#176;
   <img src="https:${iconTomorrow}"> <br>
   </div>`;
  }catch (error){
