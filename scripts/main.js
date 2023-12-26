@@ -143,22 +143,13 @@ const repetir = () => {
     if(segundos<10 ) {
         segundos = "0"+segundos;
         };
-
         if(minutos<10 ) {
             minutos = "0"+minutos;
             };
-
-    
-
     fecha.innerHTML=`Fecha: ${numeroDia}  ${mesDelAño}  ${año}`;
     reloj.innerHTML= `&#128368; Hora: ${horas} : ${minutos} : ${segundos}`;
-   
-   
-
 };
  
-
-
 setInterval(repetir, 1000);
 
 

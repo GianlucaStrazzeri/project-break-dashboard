@@ -6,7 +6,7 @@ let meteo1día=document.getElementById("meteo1día");
 
 
 
-const fetchData = async () => {
+const fetchDataToday = async () => {
   let city= ["Alicante - Spain"];
   try{
     
@@ -30,7 +30,7 @@ console.error(error);
 }
 }
 
-fetchData();
+fetchDataToday();
 
 
 
@@ -44,9 +44,11 @@ fetchData();
 
 
 const fetchDataTomorrow = async () => {
-  let today=[`2024-12-25`]
+  let tomorrow=[`2024-12-25`]
+  //let trynewdates= new Date();
+  //console.log(trynewdates);
   try{   
- const responseTomorrow = await fetch (`https://api.weatherapi.com/v1/future.json?key=77e828056a1d4ceea61213842231912&q=Alicante - Spain&dt=${today}`);
+ const responseTomorrow = await fetch (`https://api.weatherapi.com/v1/future.json?key=77e828056a1d4ceea61213842231912&q=Alicante - Spain&dt=${tomorrow}`);
  if (!responseTomorrow.ok) {
  throw new Error (`Error`);
 }
@@ -133,3 +135,9 @@ const fetchDataThreedays = async () => {
 
 
 
+ let currentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+ let day = currentDate.getDate()
+ let month = currentDate.getMonth() + 1
+ let year = currentDate.getFullYear()
+ let tomorrow= (`${year}-${month}-${day}` );
+ console.log("tomorrow is " + tomorrow); 
