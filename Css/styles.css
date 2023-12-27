@@ -144,7 +144,7 @@ button:hover{
 
 
 
-@media screen and (min-width:480px) and (max-width:768px){ /*desde los 480 hasta los 768 px cambia*/
+@media screen and (min-width:0px) and (max-width:768px){ /*desde los 0px hasta los 768 px cambia*/ /*si quisera hacerlo entre dos diferente haria min468 max 768*/
 	.container, .background{
 		width: 900px; 
 		flex-direction: column;
