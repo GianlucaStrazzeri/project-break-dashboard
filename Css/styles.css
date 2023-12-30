@@ -145,14 +145,14 @@ button:hover{
 
 
 @media screen and (min-width:0px) and (max-width:768px){ /*desde los 0px hasta los 768 px cambia*/ /*si quisera hacerlo entre dos diferente haria min468 max 768*/
-	.container, .background{
+	.container{
 		width: 900px; 
 		flex-direction: column;
 		align-items: center;
 		justify-content: center ;
 	}
 	.reloj, .link, .meteo, .passwoord{/*A 700px de tamaño cambia a 300px de ancho */
-		width: 300px;
+		width: 30vw;/* El 30% del tamaño de la pantalla
 	}
 }/*Modifica tamaño de body al reducir la pantalla, la foto se adapta al tamaño movil
  utilizar el size:cover */
