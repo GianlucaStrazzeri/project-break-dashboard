@@ -106,7 +106,7 @@ a{
 	opacity: 0.8; /*Añade opacidad/transparencia al elemento */
 }
 
-#relojpagestyle, #linkpagestyle, #passwoordpagestyle, #meteopagestyle{
+#relojpagestyle, #linkpagestyle, #passwoordpagestyle, #meteopagestyle, .img-container{
 	margin-top: 10%;
 	margin-left: 29%;
 }
@@ -152,8 +152,26 @@ button:hover{
 		justify-content: center ;
 	}
 	.reloj, .link, .meteo, .passwoord{/*A 700px de tamaño cambia a 300px de ancho */
-		width: 30vw;/* El 30% del tamaño de la pantalla
+		width: 30vw;/* El 30% del tamaño de la pantalla*/
 	}
 }/*Modifica tamaño de body al reducir la pantalla, la foto se adapta al tamaño movil
  utilizar el size:cover */
 
+.img-container{
+	overflow:hidden;
+	width:300px;
+	height:300px;
+}
+
+.img-container > img{
+width:100%;
+height:100%;
+filter:grayscale(1);
+transition: scale 750ms ease-out,
+filter 250ms ease-in-out;
+}
+
+.img-container:hover > img {
+	scale:1.35;
+	filter:grayscale(0);
+}
